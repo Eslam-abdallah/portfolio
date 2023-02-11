@@ -1,0 +1,194 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+
+}
+/* ==========================Start Header ============================*/
+.header{
+    width: 80px;
+    height: 100vh;
+    position: fixed;
+    display: grid;
+    padding-top: 30px;
+    text-align: center;
+    z-index: 2;
+    background: #fff;
+    box-shadow: 0 12px 24px rgb(0 0 0 / 9%);
+}
+.main{
+    position: absolute;
+    bottom: 45%;
+    left: 30%;
+}
+.mainx{
+    position: absolute;
+    bottom: 45%;
+    left: 30%;
+    display: none;
+}
+
+.side{
+    box-shadow: 0 12px 24px rgb(0 0 0 / 9%);
+    transition: 0.6s;
+    background: #f7f7f7;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    left: -400px;
+    align-items: center;
+    flex-direction: column;
+}
+.side img{
+    padding: 30px;
+}
+.side ul{
+    list-style: none;
+}
+.side ul li a{
+    font-size: 30px;
+    color: #a6a6a6;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.35s;
+    line-height: 2.3;
+}
+.side ul li a:hover{
+    color: #f0437e;
+}
+    .sideshow{
+        box-shadow: 0 12px 24px rgb(0 0 0 / 9%);
+        transition: 0.6s;
+        background: #f7f7f7;
+        width: 257px;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        z-index: 1;
+        left: 80px;
+        align-items: center;
+        flex-direction: column;
+    }
+    /* ==========================End Header ============================*/
+
+    /* ==========================Start Content ============================*/
+
+.divs{
+    height: 350px;
+    padding: 0;
+
+}
+.parent{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.parent img{
+    width: 100%;
+    height: 100%;
+}
+.items{
+    transition: all .35s;
+    text-align: center;
+    overflow: hidden;
+}
+.items h1{
+    margin-top: 50%;
+    margin-bottom: 5%;
+}
+.items a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #a6a6a6;
+}
+.items a:hover{
+    text-decoration:underline;
+
+}
+.parent:hover .items{
+    width: 100%;
+    background: rgba(255,255,255,.9);
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.footer{
+    padding: 30px;
+}
+    /* ==========================End Content ============================*/
+
+/* ==============================Start Media ============================*/
+@media (max-width:992px){
+    .header{
+        width: 100%;
+        position: fixed;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+    .main{
+        position: absolute;
+        bottom: 25px;
+        right: 10%;
+        left: auto;
+    }
+    .mainx{
+        position: absolute;
+        bottom: 25px;
+        right: 10%;
+        left: auto;
+    }
+    .sideshow{
+        box-shadow: 0 12px 24px rgb(0 0 0 / 9%);
+        transition: 0.6s;
+        background: #f7f7f7;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        z-index: 1;
+        left: 0;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width:525px){
+    .header{
+        width: 100%;
+        position: fixed;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+
+    }
+    .main{
+        position: absolute;
+        bottom: 25px;
+        right: 10%;
+        left: auto;
+    }
+    .mainx{
+        position: absolute;
+        bottom: 25px;
+        right: 10%;
+        left: auto;
+    }
+    .sideshow{
+        box-shadow: 0 12px 24px rgb(0 0 0 / 9%);
+        transition: 0.6s;
+        background: #f7f7f7;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        z-index: 1;
+        left: 0;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+/* ====================================End Media ===========================*/
