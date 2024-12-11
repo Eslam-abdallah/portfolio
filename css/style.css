@@ -76,6 +76,7 @@ body{
 .divs{
     height: 350px;
     padding: 0;
+    cursor: pointer;
 
 }
 .parent{
@@ -107,18 +108,38 @@ body{
     text-decoration:underline;
 
 }
-.parent:hover .items{
+/* .parent:hover .items{
     width: 100%;
     background: rgba(255,255,255,.9);
     height: 100%;
     position: absolute;
     top: 0;
-}
+} */
 .footer{
     padding: 30px;
 }
     /* ==========================End Content ============================*/
-
+.main-area{
+    position: relative;
+}
+.open-img{
+    position: absolute;
+    transform: translate(-50%, -20%);
+    top: 20%;
+    left: 50%;
+    border-radius: 5px;
+    display: none;
+    background-color: azure;
+    border: 1px solid #e7e7e7;
+    box-shadow: 2px 2px 2px #777;
+}
+.open-img .img-area img{
+    width: 100%;
+    height: 300px;
+}
+.active{
+    display: block;
+}
 /* ==============================Start Media ============================*/
 @media (max-width:992px){
     .header{
