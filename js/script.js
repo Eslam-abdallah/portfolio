@@ -13,3 +13,12 @@ $('#close-nav').click(function(){
     $('.mainx').toggle();
 });
 
+let openImage =document.querySelector('.open-img'); 
+let GetImage =document.querySelector('.Image'); 
+function openimg(ImageSrc){
+    openImage.classList.toggle("active");
+    GetImage.src=ImageSrc;
+}
+function closeimg(){
+    openImage.classList.remove("active");
+}
